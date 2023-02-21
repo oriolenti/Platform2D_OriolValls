@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlataformaMovil
   - Virgilio
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -16,9 +16,11 @@ GameObject:
   - component: {fileID: 2132697405520202984}
   - component: {fileID: 2132697405520202985}
   - component: {fileID: 2132697405520202986}
+  - component: {fileID: 2040995006}
+  - component: {fileID: 2040995007}
   m_Layer: 3
   m_Name: Personaje
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,6 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   force: 2000
+  efectoSalto: {fileID: 0}
 --- !u!95 &2132697405520202986
 Animator:
   serializedVersion: 4
@@ -197,3 +200,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2040995006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132697405520202978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0abc15f7afed544b77653fd41a6909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2040995007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132697405520202978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec759b03f5b75c94e9980bb9ac8e0209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashDistance: 5
+  dashTime: 0.1
+  dashLayerMask:
+    serializedVersion: 2
+    m_Bits: 0

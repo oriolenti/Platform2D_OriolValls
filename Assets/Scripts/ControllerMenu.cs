@@ -3,15 +3,24 @@ using UnityEngine.SceneManagement;
 using static System.Net.Mime.MediaTypeNames;
 using System.Collections;
 
-public class ControladorMenuPrincipal : MonoBehaviour
+public class ControllerMenu : MonoBehaviour
 {
-    public void CargarEscena(string Escena)
+    public void ElegirEscena()
     {
-        SceneManager.LoadScene(Escena);
+        SceneManager.LoadScene("Game");
     }
 
     public void Gimnasio()
     {
         SceneManager.LoadScene("Gimnasio");
+    }
+
+    public void Exit()
+    {
+        #if UNITY_EDITOR
+                    UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                Application.Quit();
+        #endif
     }
 }

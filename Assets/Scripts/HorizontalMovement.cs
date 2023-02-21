@@ -8,6 +8,7 @@ public class HorizontalMovement : MonoBehaviour
     public Animator anim;
     public GroundDetector ground;
     public float speed = 5;
+
     // Start is called before the first frame update
     void Start()
     {
